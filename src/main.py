@@ -53,7 +53,7 @@ def main(first = False):
     def instructions():
         screen.fill(0xffffff)
         font = pygame.font.SysFont("Arial ms", 50)
-        para = ["Welcome to Hex Guess!".center(85), "", "Each round, you will be given a color (the circle in the cen-", "ter of the screen), and four hex-codes. One of the hex-", "codes matches the color, and it's your job to figure-out", "which one that is. After {0} rounds, you will be given your".format(constants.rounds), "score. Try to get the perfect {0}/{0}!".format(constants.rounds), "", "Good luck!".center(95)]
+        para = ["Welcome to Hex Guess!".center(85), "", "Each round, you will be given a color (the circle in the cen-", "ter of the screen), and four hex-codes. One of the hex-", "codes matches the color, and it's your job to figure out", "which one that is. After {0} rounds, you will be given your".format(constants.rounds), "score. Try to get the perfect {0}/{0}!".format(constants.rounds), "", "Good luck!".center(95)]
         i = 140
         for x in para:
             text = font.render(x, False, constants.BLACK)
