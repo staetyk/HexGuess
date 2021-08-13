@@ -1,6 +1,6 @@
 # HexGuess
 
-In order to play, run [main.py](scr/main.py) in scr folder.
+In order to play, run [main.py](src/main.py) in scr folder.
 
 ## Controls
 
