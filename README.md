@@ -1,5 +1,7 @@
 # HexGuess
 
+In order to play, run [main.py](scr/main.py) in scr folder.
+
 ## Controls
 
 - arrow keys or WASD to move
