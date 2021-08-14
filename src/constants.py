@@ -16,4 +16,4 @@ SCREEN_HEIGHT = 650
 rounds = 10
 
 name = "HEX Guess"
-icon = "../images/icon.png"
+icon = "images/icon.png"

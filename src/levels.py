@@ -25,7 +25,7 @@ class Level:
     def draw(self, screen, bg = 0x1000000, options = ()):
         if bg <= 0xffffff:
             screen.fill(bg)
-            back = pygame.image.load("../images/round_back.png")
+            back = pygame.image.load("images/round_back.png")
             screen.blit(back, (0, 0))
         if len(options) == 4:
             font = pygame.font.SysFont("Arial", 80)

@@ -19,7 +19,7 @@ class Player(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         #Set the player sprite
-        self.image = pygame.image.load('../images/cursor.png')
+        self.image = pygame.image.load('images/cursor.png')
 
         #Set the player's default score
         self.score = 0

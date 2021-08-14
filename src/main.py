@@ -34,7 +34,7 @@ def main(first = False):
 
     pygame.init()
     pygame.mixer.init()
-    pygame.mixer.music.load('../sounds/music.wav')
+    pygame.mixer.music.load('sounds/music.wav')
     pygame.mixer.music.play(-1)
 
     # Set the height and width of the screen
@@ -106,7 +106,7 @@ def main(first = False):
                 global opt_hard
                 opt_hard = opt_hard == False
                 if opt_sound:
-                    play = pygame.mixer.Sound("../sounds/secret4.wav")
+                    play = pygame.mixer.Sound("sounds/secret4.wav")
                     pygame.mixer.Sound.play(play)
                 history = ""
 
@@ -149,7 +149,7 @@ def main(first = False):
 
     if first:
         screen.fill(constants.CORNFLOWER_BLUE)
-        logo = pygame.image.load("../images/logo.png")
+        logo = pygame.image.load("images/logo.png")
         screen.blit(logo, (290, 200))
         pygame.display.flip()
 
@@ -191,10 +191,10 @@ def main(first = False):
             else:
                 match = list(choices.values())[3]
         if match:
-            play = pygame.mixer.Sound("../sounds/secret2.wav")
+            play = pygame.mixer.Sound("sounds/secret2.wav")
             score = 1
         else:
-            play = pygame.mixer.Sound("../sounds/fall3.wav")
+            play = pygame.mixer.Sound("sounds/fall3.wav")
             score = 0
         if fx:
             pygame.mixer.Sound.play(play)
@@ -213,7 +213,7 @@ def main(first = False):
             i += 1
 
         screen.fill(0xff0000)
-        green = pygame.image.load("../images/quarter.png")
+        green = pygame.image.load("images/quarter.png")
         screen.blit(green, quarter)
         pygame.display.flip()
         time.sleep(0.5)
@@ -274,7 +274,7 @@ def main(first = False):
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_r:
                     if opt_sound:
-                        click = pygame.mixer.Sound("../sounds/coin1.wav")
+                        click = pygame.mixer.Sound("sounds/coin1.wav")
                         pygame.mixer.Sound.play(click)
                     main()
                     exit()
@@ -328,7 +328,7 @@ def main(first = False):
                 comicsansmsfontSmall = pygame.font.SysFont('Arial ms', 50)
                 textsurface = comicsansmsfontSmall.render(f'Score: {player.score}/{constants.rounds}', False, constants.WHITE)
                 screen.blit(textsurface, (400, 100))
-                logo = pygame.image.load("../images/logo.png")
+                logo = pygame.image.load("images/logo.png")
                 screen.blit(logo, (290, 175))
                 textsurface = comicsansmsfontSmall.render('Press \'R\' to restart!', False, constants.WHITE)
                 screen.blit(textsurface, (340, 450))

@@ -2,7 +2,7 @@ import platforms
 
 
 def main(self):
-    img = "../images/clear_pixel.png"
+    img = "images/clear_pixel.png"
     for x in range(1000):
         up = platforms.Platform(img)
         up.rect.x = x
