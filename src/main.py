@@ -148,7 +148,7 @@ def main(first = False):
 
 
     if first:
-        screen.fill(constants.CORNFLOWER_BLUE)
+        screen.fill(constants.END_BACKGROUND)
         logo = pygame.image.load("images/logo.png")
         screen.blit(logo, (290, 200))
         pygame.display.flip()
@@ -324,7 +324,7 @@ def main(first = False):
         """
 
         if gameover:
-                screen.fill(constants.CORNFLOWER_BLUE)
+                screen.fill(constants.END_BACKGROUND)
                 comicsansmsfontSmall = pygame.font.SysFont('Arial ms', 50)
                 textsurface = comicsansmsfontSmall.render(f'Score: {player.score}/{constants.rounds}', False, constants.WHITE)
                 screen.blit(textsurface, (400, 100))
