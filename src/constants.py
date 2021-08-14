@@ -6,7 +6,7 @@ Global constants
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 BLUE = (0, 0, 255)
-CORNFLOWER_BLUE = (0x333333)
+CORNFLOWER_BLUE = (0x222222)
 BACKGROUND = (0, 0, 255)
 
 # Screen dimensions
